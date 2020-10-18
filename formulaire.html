@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+    <head>
+        <title>agenda</title>
+        <meta charset="UTF-8" />
+        <script src="https://kit.fontawesome.com/6f0632ca8c.js"></script>
+        <link rel="stylesheet" href="agenda.css">
+    </head>
+
+    <body>
+        <header>
+            <section>
+                <a href="agenda.html">
+                <h1>
+                    My minimalist agenda
+                </h1>
+            </a>
+            </section>
+        </header>
+
+        <section class="formulaire">
+            <article>
+                <form action="form.php">
+                    <fieldset id="fieldset_1">
+                        <legend>Ajouter un événement</legend>
+                        <div id="div_inside_fieldset">
+                        <div id="format_flex">
+                            <div>
+                                <div class="label_div">
+                                    <label for="date_event">Date</label>
+                                </div>
+                                <input type="date" id="date_event" required>
+                            </div>
+                            <div>
+                                <div class="label_div">
+                                    <label for="heure_event">Heure</label>
+                                </div>
+                                <input type="time" id="heure_event" required>
+                            </div>
+                            <div>
+                                <div class="label_div">
+                                    <label for="title">Titre</label>
+                                </div>
+                                <input type="text" id="title" required>
+                            </div>
+                            <div>
+                                <div class="label_div">
+                                    <label for="describe">Description</label>
+                                </div>
+                                <textarea id="describe">Ajouter des détails ici</textarea>  
+                            </div>
+                        </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="fieldset_2"> 
+                    <legend>Choisissez une catégorie</legend>
+                    <div id="all_cat">
+                        <div class="cat">
+                            <input type="radio" id="important" name="catégorie" value="Important" autofocus>
+                            <label id="red" for="important">Important</label>
+                        </div>
+                        <div class="cat">
+                            <input type="radio" id="loisirs" name="catégorie" value="Loisirs">
+                            <label id="blue" for="loisirs">Loisirs</label>
+                        </div>
+                        <div class="cat">
+                            <input type="radio" id="divers" name="catégorie" value="Divers">
+                            <label id="green" for="divers">Divers</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <input type="submit">  
+            </form>
+            </article>
+        </section>
+
+
+
+        <footer>
+            <section>
+                <a href="agenda.html">
+                    <h1>
+                    Back to agenda
+                    </h1>
+                </a>
+            </section>
+        
+        </footer>
+        
+        
+        </body>
